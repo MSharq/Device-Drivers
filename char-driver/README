@@ -1,4 +1,4 @@
-after downloading the filesÖ
+After downloading the files.
 do "make", now you will get hello.ko kernel object.
 "insmod hello.ko" and do dmesg to see the message of registering and the major and minor number assigned.
 
