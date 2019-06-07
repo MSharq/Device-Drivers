@@ -38,7 +38,7 @@ static ssize_t my_read(struct file *f, char __user *buf, size_t len, loff_t *off
 
 	if (*off == 0)
 	{
-		if (copy_to_user(buf, &c, 3) != 0)
+		if (copy_to_user(buf, &c, 2) != 0)
 			return -EFAULT;
 		else
 		{
@@ -54,7 +54,7 @@ static ssize_t my_read(struct file *f, char __user *buf, size_t len, loff_t *off
 static ssize_t my_write(struct file *f, const char __user *buf, size_t len, loff_t *off)
 {
 	printk(KERN_INFO "Driver: write()\n");
-	if (copy_from_user(&c, buf, 3) != 0) 
+	if (copy_from_user(&c, buf, 2) != 0) 
 		return -EFAULT;
 	else
 	{
