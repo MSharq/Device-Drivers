@@ -1,3 +1,3 @@
 # Device-Drivers
 
-This is a self-development repository for device driver development experiments.
+These are a self-development set of projects for device driver development experiments.
