@@ -2,7 +2,7 @@ After downloading the files.
 do "make", now you will get hello.ko kernel object.
 "insmod hello.ko" and do dmesg to see the message of registering and the major and minor number assigned.
 
-You can check the /dev folder to see, whether it populated or not by name "mydev".
+You can check the /dev folder to see, whether it populated or not by name "yournull".
 
 To see it in action do: "echo "abc" > /dev/yournull"
 then dmesg, to see the value in the buffer
