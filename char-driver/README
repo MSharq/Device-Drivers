@@ -6,7 +6,7 @@ You can check the /dev folder to see, whether it populated or not by name "yourn
 
 To see it in action do: "echo "abc" > /dev/yournull"
 then dmesg, to see the value in the buffer
-then doe "cat /dev/yournull" to print the first alphabet of the echoed string.
+then do "cat /dev/yournull" to print the first alphabet of the echoed string.
 do dmesg, to see the open , write , read and close operations in action.
 
 One can use this template and enhance it into any kind of character driver.
