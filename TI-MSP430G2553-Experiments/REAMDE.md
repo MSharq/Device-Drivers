@@ -13,7 +13,7 @@ Experiment 1 - Blinking of LEDs
 
 Experiment 2 - Playing around push buttons and polling
 
-Experiment 3 - Playing with Shift registers, which works and takes command very similar to SPI communication protocols.
+Experiment 3 - Playing with Shift registers, which takes command and functions very similar to SPI communication protocol.
 
 Experiment 4 - Playing with Analog-to-digital converters and light dependent registers
 
