@@ -1,5 +1,5 @@
 
---When you insert using "insmod basic-usb.ko" the usb driver, checkout the dmesg command for the registering and
+--When you insert using "insmod basic-usb.ko" or "rmmod basic-usb.ko" the usb driver, checkout the dmesg command for the registering and
 deregistering messages.
 
 --to see the driver into action, the actual usb driver has to removed, using "rmmod". 
