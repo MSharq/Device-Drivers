@@ -16,3 +16,5 @@ driver will be used. Just make sure the product Id and the vendor Id given in th
 
 To see some action, when you plug in or plug out, check out "dmesg" command. In the logs, you can see what happened 
 and what messages got displayed, and in what order various functions got called.
+
+On inserting the pen drive, you may find /dev/pen0 getting created as a character device node. You may try to read using cat command or write using echo but it will fail, because the data has to be formatted in a specific way, which I am still trying to figure out ;) 
