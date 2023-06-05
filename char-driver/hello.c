@@ -84,13 +84,15 @@ static int __init ofcd_init(void)
 	}
 
 	printk(KERN_INFO "<Major, Minor>: <%d, %d>\n", MAJOR(first), MINOR(first));
-	
+
+	// class create for sysfs directory - /sys/class/chardrv/
 	if (IS_ERR(cl = class_create(THIS_MODULE, "chardrv")))
 	{
 		unregister_chrdev_region(first, 1);
 		return PTR_ERR(cl);
 	}
 
+	// device create inside /sys/class/chardrv directory and /dev/ directory
 	if (IS_ERR(dev_ret = device_create(cl, NULL, first, NULL, "yournull")))
 	{
 		class_destroy(cl);
@@ -119,7 +121,7 @@ static void __exit ofcd_exit(void)
 	device_destroy(cl, first);
 	class_destroy(cl);
 	unregister_chrdev_region(first, 1);
-	printk(KERN_EMERG "Bye Sharq: unregistered");
+	printk(KERN_EMERG "Bye Sharq: unregistered\n");
 }
 
 module_init(ofcd_init);
